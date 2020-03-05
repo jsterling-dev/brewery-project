@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAGQ,yFAAiF;ACHzF;;OAEQ;EACJ,UAAU,EAAE,UAAU;;AAG1B,IAAK;EACD,MAAM,EAAE,MAAM;;AAGlB,IAAK;EACJ,eAAe,EAAE,MAAM;;ACXxB,EAAG;EACF,WAAW,ECDA,eAAe",
-"sources": ["../scss/_type.scss","../scss/_resets.scss","../scss/_header.scss","../scss/_variables.scss"],
+"mappings": "AAGQ,yFAAiF;ACHzF;;OAEQ;EACJ,UAAU,EAAE,UAAU;;AAG1B,IAAK;EACD,MAAM,EAAE,MAAM;;AAGlB,IAAK;EACJ,eAAe,EAAE,MAAM;;ACXxB,EAAG;EACF,WAAW,ECDA,eAAe;;ACA3B,IAAK;EACD,gBAAgB,EAAE,IAAI",
+"sources": ["../scss/_type.scss","../scss/_resets.scss","../scss/_header.scss","../scss/_variables.scss","../scss/_body.scss"],
 "names": [],
 "file": "styles.css"
 }
