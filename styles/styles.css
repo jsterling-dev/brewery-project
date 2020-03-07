@@ -13,8 +13,8 @@ html {
 .nav-section img {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 40%; }
+  left: 10%;
+  height: 30%; }
 
 .top-banner img {
   max-width: 100%; }
