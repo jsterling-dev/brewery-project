@@ -1,13 +1,21 @@
-*,
-*:before,
-*:after {
+// Resets
+
+// Box Sizing Reset
+html {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 auto;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-html {
-	scroll-behavior: smooth;
+// Image Reset
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Remove margins on body
+body {
+    margin: 0;
 }

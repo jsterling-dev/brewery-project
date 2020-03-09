@@ -1,10 +1,17 @@
-.nav-section img {
-	position:absolute;
-	top:0;
-	left:10%;
-	height:30%;
-}
-
 .top-banner img{
 	max-width:100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.top-banner h1 {
+	color: white;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	z-index: 9999;
+	font-size: 50px;
+	text-shadow: 2px 3px $orange;
+
 }
