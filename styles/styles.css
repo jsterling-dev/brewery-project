@@ -75,13 +75,14 @@ p {
 
 footer {
   background-color: #d66a42;
-  display: flex;
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px; }
 
-#copyright p {
-  margin: 0; }
+.footer-row-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 footer .social-icons {
   display: flex;
@@ -96,17 +97,47 @@ footer .social-icons img {
 footer .footer-nav li a {
   color: white;
   text-shadow: 1px 2px #964a2f;
-  margin-left: 15px;
   font-size: 14px; }
 
-footer .footer-nav {
-  display: flex;
-  line-height: 1.4em;
-  padding-left: 0; }
+.footer-col-01, .footer-col-02 {
+  display: flex; }
+
+.footer-col-01 li:last-child {
+  margin-left: 20px; }
+
+.footer-col-02 li:last-child {
+  margin-left: 45px; }
 
 #copyright {
-  display: none; }
+  color: white;
+  font-size: 12px;
+  text-shadow: 1px 2px #964a2f;
+  text-align: center;
+  padding-top: 10px; }
 
+#copyright p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+  font-size: 14px; }
+
+@media (min-width: 600px) {
+  .cta {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-between; }
+
+  .footer-col-01 li:last-child {
+    margin-left: 0px; }
+
+  .footer-col-02 li:last-child {
+    margin-left: 0px; }
+
+  .footer-nav li a {
+    margin-left: 40px; } }
 .main-content {
   padding-left: 15px;
   padding-right: 15px; }
@@ -244,5 +275,58 @@ footer .footer-nav {
 .contact-info p {
   margin-top: 0;
   margin-bottom: 5px; }
+
+.cta1, .cta2, .cta3, .cta4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  padding: 50px; }
+
+.cta1 {
+  background-image: url(/images/our-beer-banner.jpg); }
+
+.cta2 {
+  background-image: url(../images/tasting-room-banner.jpg); }
+
+.cta3 {
+  background-image: url(../images/about-banner.jpg); }
+
+.cta4 {
+  background-image: url(../images/contact-banner.jpg); }
+
+.cta h2 {
+  color: white;
+  text-shadow: 2px 3px #d66a42;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.home-address {
+  padding-top: 50px;
+  padding-left: 20px; }
+
+.home-contact {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 50px; }
+
+.home-address p, .home-contact p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 2px; }
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media (min-width: 600px) {
+  .cta1, .cta2, .cta3, .cta4 {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center; } }
 
 /*# sourceMappingURL=styles.css.map */

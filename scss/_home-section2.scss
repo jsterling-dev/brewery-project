@@ -1,0 +1,68 @@
+.cta1, .cta2, .cta3, .cta4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    padding: 50px;
+}
+
+.cta1 {
+    background-image: url(/images/our-beer-banner.jpg);
+}
+
+.cta2 {
+    background-image: url(../images/tasting-room-banner.jpg);
+}
+
+.cta3 {
+    background-image: url(../images/about-banner.jpg);
+}
+
+.cta4 {
+    background-image: url(../images/contact-banner.jpg);
+}
+
+.cta h2 {
+    color: white;
+    text-shadow: 2px 3px $orange;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.home-address {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.home-contact {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+}
+
+.home-address p, .home-contact p {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    
+    .cta1, .cta2, .cta3, .cta4 {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+

@@ -1,13 +1,14 @@
 footer {
 	background-color: $orange;
-	display: flex;
 	justify-content: space-between;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 
-#copyright p{
-	margin:0;
+.footer-row-01 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 footer .social-icons {
@@ -25,18 +26,58 @@ footer .social-icons img {
 footer .footer-nav li a {
 	color: white;
 	text-shadow: 1px 2px $dark-orange;
-	margin-left: 15px;
 	font-size: 14px;
 }
 
-footer .footer-nav {
+.footer-col-01, .footer-col-02 {
 	display: flex;
-	line-height: 1.4em;
-	padding-left: 0;
 }
 
-// Temporary
-#copyright {
-	display: none;
+.footer-col-01 li:last-child {
+	margin-left: 20px;
 }
+
+.footer-col-02 li:last-child {
+	margin-left: 45px;
+}
+
+#copyright {
+	color: white;
+	font-size: 12px;
+	text-shadow: 1px 2px $dark-orange;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#copyright p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+
+@media (min-width: 600px) {
+	.cta {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.footer-nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-col-01 li:last-child {
+		margin-left: 0px;
+	}
+	
+	.footer-col-02 li:last-child {
+		margin-left: 0px;
+	}
+
+	.footer-nav li a {
+		margin-left: 40px;
+	}
+}
+
 
