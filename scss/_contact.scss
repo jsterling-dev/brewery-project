@@ -1,3 +1,10 @@
+.top-banner .contact-h1 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .address-block {
     display: flex;
     justify-content: center;
@@ -15,35 +22,42 @@
     text-align: center;
 }
 
+.main-image {
+    margin: 0 auto;
+    max-width: 800px; 
+    margin-bottom: 15px;
+}
+
 .google-map {
-    background-color: $orange;
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
 }
 
 .google-map iframe {
-    width: 300px;
-}
-
-.hours-section {
-    display: flex;
+    max-width: 100%;
+    height: 300px;
 }
 
 .hours-content {
-    width: 50%;
-    padding-left: 20px;
+    margin-bottom: 15px;
 }
 
 .hours-content h2 {
-    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 .hours-columns {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hours-col-02 {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .hours-col-01 p, .hours-col-02 p {
@@ -51,31 +65,38 @@
     margin-top: 2px;
 }
 
+.contact-section {
+    max-width: 800px;
+}
+
 .contact-section h3 {
-    font-size: 16px;
+    font-size: 20px;
+}
+
+.contact-section p {
+    max-width: 460px;
 }
 
 .form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 100%;
+}
 
+.form textarea {
+    max-width: 100%;
 }
 
 .form input, .form textarea {
-    color: $grey;
+    color: black;
     margin-bottom: 10px;
-    border: 1px solid $grey;
+    border: 1px solid black;
     padding: 10px;
 }
 
-.form input {
-    margin-left: 5px;
+.form textarea::placeholder, .form input::placeholder {
+    color: black;
+    font-family: $main-font;
+    font-size: 14px;
 }
-
-.form input:first-child {
-    margin-left: 0;
-}
-
 
 .btn-submit {
     border: none;
@@ -98,4 +119,58 @@
 .contact-info p {
     margin-top: 0;
     margin-bottom: 5px;
+}
+
+@media (min-width: 333px) {
+    .form input:nth-child(2) {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 484px) {
+
+    .form input:nth-child(2) {
+        margin-left: 2.5px;
+    }
+
+    .form input:nth-child(3) {
+        margin-left: 2.5px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .hours-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        max-width: 800px;
+    }
+
+    .hours-content {
+        width: 400px;
+    }
+
+    .google-map, .google-map iframe {
+        max-width: 350px;
+    }
+
+    .hours-content h2 {
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 750px) {
+
+    .hours-section {
+        display: flex;
+    }
+    
+    .hours-content {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+
 }
