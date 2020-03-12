@@ -217,6 +217,9 @@ footer .footer-nav li a {
   width: 300px;
   height: 200px; }
 
+.google-map iframe {
+  width: 300px; }
+
 .hours-section {
   display: flex; }
 
