@@ -21,8 +21,10 @@ body {
 .top-banner h1 {
   color: white;
   position: absolute;
-  top: 20%;
-  left: 30%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
   z-index: 9999;
   font-size: 50px;
   text-shadow: 2px 3px #d66a42; }
