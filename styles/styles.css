@@ -505,21 +505,32 @@ img {
     margin: 0 auto; }
 
   .hours-content {
-    width: 400px;
+    width: 350px;
     margin-top: 0; }
 
   .hours-content h2 {
+    display: block;
+    margin-left: 30px; }
+
+  .hours-columns {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px; }
+
+  .hours-content h2 {
     margin-top: 0; } }
+@media (min-width: 650px) {
+  .hours-content {
+    width: 280px; } }
 @media (min-width: 700px) {
   .top-banner .contact-h1 {
     font-size: 70px; } }
-@media (min-width: 750px) {
-  .hours-section {
-    display: flex; }
-
+@media (min-width: 800px) {
   .hours-content {
-    width: 50%;
-    padding-left: 20px; } }
+    width: 230px; } }
+@media (min-width: 820px) {
+  .hours-content {
+    width: 220px; } }
 .cta1, .cta2, .cta3, .cta4 {
   background-size: cover;
   background-repeat: no-repeat;

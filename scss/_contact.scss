@@ -109,14 +109,6 @@
     text-align: center;
 }
 
-// .contact-section p {
-//     max-width: 460px;
-// }
-
-// .form {
-//     width: 100%;
-// }
-
 .form input, .form textarea {
     color: black;
     margin-bottom: 10px;
@@ -172,15 +164,6 @@
 
 @media (min-width: 484px) {
 
-
-    // .form input:nth-child(2) {
-    //     margin-left: 4px;
-    // }
-
-    // .form input:nth-child(3) {
-    //     margin-left: 4px;
-    // }
-
     .hours-content {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -204,13 +187,21 @@
     }
 
     .hours-content {
-        width: 400px;
+        width: 350px;
         margin-top: 0;
     }
 
-    // .google-map, .google-map iframe {
-    //     max-width: 350px;
-    // }
+    
+    .hours-content h2 {
+        display: block;
+        margin-left: 30px;
+    }
+    
+    .hours-columns {
+        display: flex;
+        justify-content: left;
+        margin-left: 30px;
+    }
 
     .hours-content h2 {
         margin-top: 0;
@@ -218,24 +209,31 @@
 
 }
 
+@media (min-width: 650px) {
+
+    .hours-content {
+        width: 280px;
+    }
+}
+
 @media (min-width: 700px) {
 
     .top-banner .contact-h1 {
         font-size: 70px;
     }
-
 }
 
-@media (min-width: 750px) {
-
-    .hours-section {
-        display: flex;
-    }
     
+@media (min-width: 800px) {
+
     .hours-content {
-        width: 50%;
-        padding-left: 20px;
+        width: 230px;
     }
+}
 
+@media (min-width: 820px) {
 
+    .hours-content {
+        width: 220px;
+    }
 }
