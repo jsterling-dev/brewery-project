@@ -14,7 +14,7 @@
         <header>
             <div class="top-banner">
                 <img src="/images/contact-banner.jpg" alt="Wood Barrels of Beer">
-                <h1>Contact</h1>
+                <h1 class="contact-h1">Contact</h1>
                 <nav id="navigation">
                     <div class="nav-logo">
                         <img src="/images/logo-03.png" alt="Sunrise Brewing Co. logo">
@@ -35,9 +35,9 @@
                 </nav>
             </div><!--end top-banner-->
         </header>
-        <main>
-            <div class="background-box"></div><!--end background-box-->
-                <div class="main-content">
+        <main class="main-contact">
+            <div class="contact-background-box"></div><!--end contact-background-box-->
+                <div class="contact-main-content">
                 <div class="address-block">
                     <div class="address">
                         <p>Sunrise Brewing Co.</p>
@@ -75,10 +75,12 @@
                     <h3>Questions, bookings, love letters?</h3>
                     <p>Fill out our contact form and we'll get back to you as soon as we're finished our daily brew.</p>
                     <div class="form">
-                        <input type="text" id="name" name="name" placeholder="Name">
-                        <input type="text" id="phone" name="phone" placeholder="Phone">
-                        <input type="text" id="email" name="email" placeholder="Email">
-                        <textarea id="message" name="message" rows="10" cols="70" placeholder="Your message here"></textarea>
+                        <div class="form-inputs">
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <input type="text" id="phone" name="phone" placeholder="Phone">
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </div><!--end form-inputs-->
+                        <textarea id="message" name="message" rows="20" cols="70" placeholder="Your message here"></textarea>
                     </div><!--end form-->
                     <div class="submit-button">
                         <button class="btn-submit">Submit</button>
@@ -88,7 +90,7 @@
                         <p>604-604-6046</p>
                     </div>
                 </div><!--end contact-section-->
-            </div><!--end main-content-->
+            </div><!--end contact-main-content-->
         </main>
         <footer>
             <div class="footer-row-01">

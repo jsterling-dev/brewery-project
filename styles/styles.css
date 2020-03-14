@@ -356,20 +356,47 @@ img {
   margin-bottom: 30px;
   background-color: #d66a42; }
 
+.main-contact {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.contact-background-box {
+  background-color: #d66a42;
+  opacity: 0.1;
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 800; }
+
+.contact-main-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .top-banner .contact-h1 {
-  font-size: 30px;
+  font-size: 10vw;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-top: 25px; }
 
 .address-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 .address p:first-child {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .address p {
   margin-bottom: 0;
@@ -415,22 +442,15 @@ img {
   max-width: 800px; }
 
 .contact-section h3 {
-  font-size: 20px; }
-
-.contact-section p {
-  max-width: 460px; }
-
-.form {
-  max-width: 100%; }
-
-.form textarea {
-  max-width: 100%; }
+  font-size: 20px;
+  text-align: center; }
 
 .form input, .form textarea {
   color: black;
   margin-bottom: 10px;
   border: 1px solid black;
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
 
 .form textarea::placeholder, .form input::placeholder {
   color: black;
@@ -438,7 +458,7 @@ img {
   font-size: 14px; }
 
 .btn-submit {
-  border: none;
+  border: 1px solid black;
   width: 100px;
   padding: 10px 20px;
   background-color: white;
@@ -457,30 +477,42 @@ img {
   margin-top: 0;
   margin-bottom: 5px; }
 
-@media (min-width: 333px) {
-  .form input:nth-child(2) {
+@media (min-width: 440px) {
+  .contact-section h3 {
+    text-align: left; }
+
+  .form-inputs {
+    display: flex;
+    justify-content: space-between; }
+
+  .form-inputs input:nth-child(2), .form-inputs input:last-child {
     margin-left: 5px; } }
 @media (min-width: 484px) {
-  .form input:nth-child(2) {
-    margin-left: 2.5px; }
+  .hours-content {
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
-  .form input:nth-child(3) {
-    margin-left: 2.5px; } }
+  .contact-section {
+    margin-top: 40px;
+    max-width: auto;
+    margin: 0 auto; } }
 @media (min-width: 600px) {
   .hours-section {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    max-width: 800px; }
+    max-width: 800px;
+    margin: 0 auto; }
 
   .hours-content {
-    width: 400px; }
-
-  .google-map, .google-map iframe {
-    max-width: 350px; }
+    width: 400px;
+    margin-top: 0; }
 
   .hours-content h2 {
     margin-top: 0; } }
+@media (min-width: 700px) {
+  .top-banner .contact-h1 {
+    font-size: 70px; } }
 @media (min-width: 750px) {
   .hours-section {
     display: flex; }
