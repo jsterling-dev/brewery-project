@@ -9,7 +9,8 @@
     width: 100%;
     position:absolute;
     top:0;
-    left:0;
+	left:0;
+	z-index: 9999;
 }
 
 #navigation img {
@@ -40,6 +41,11 @@
 
 .menu-left {
 	background-color: $orange;
+	height: 200px;
+}
+
+.menu-left li:first-child {
+	padding-top: 40px;
 }
 
 li {
@@ -186,4 +192,14 @@ ul.menu-left:before {
   background-color: #000;
   transition: all .25s;
 }
+
+.menu-left {
+	background-color: $orange;
+	height: 20px;
+}
+
+.menu-left li:first-child {
+	padding-top: 0px;
+}
+
 }
