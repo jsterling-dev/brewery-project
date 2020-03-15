@@ -1,3 +1,35 @@
+// Background box styles
+
+.main-beer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.beer-background-box {
+    background-color: $orange;
+    opacity: 0.1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 800;
+}
+
+.beer-main-content {
+	position: relative;
+	top: 0;
+	left: 0;
+    z-index: 900;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+// Main Styles
+
 .main-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -6,6 +38,7 @@
 .buttons {
     display: flex;
     padding-bottom: 20px;
+    padding-top: 30px;
 }
 
 .btn-beer, .btn-snacks {
@@ -19,6 +52,7 @@
     font-size: 16px;
     box-shadow: 2px 3px $orange;
     border-radius: 3px;
+    border: 1px solid black;
 }
 
 .beer-button {
@@ -33,11 +67,11 @@
 .beer-name p:first-child {
     font-weight: 700;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .beer-name p:last-child {
     margin-top: 5px;
-    margin-bottom: 0;
 }
 
 .line {
@@ -66,7 +100,28 @@
 }
 
 .beer-listing {
-    padding: 10px 20px;
+    padding: 30px 20px;
     margin-bottom: 30px;
-    background-color: $orange;
+    background-color: white;
+}
+
+@media (min-width: 600px) {
+    
+    .beer-listing {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .beer-label p, .beer-content p {
+        padding-left: 30px;
+    }
+
+    .beer-label p {
+        padding-left: 40px;
+    }
+
+    .beer-info p {
+        margin-top: 0;
+        // padding-left: 40px;
+    }
 }
