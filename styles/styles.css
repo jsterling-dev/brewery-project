@@ -611,6 +611,201 @@ footer .footer-nav li a {
   padding: 10px;
   width: 100%; }
 
+.form-preferred-method {
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.checkboxes {
+  display: flex; }
+
+.form-preferred-method p, .form-preferred-day p {
+  padding-left: 10px;
+  font-size: 14px; }
+
+.checkbox-container-01, .checkbox-container-02 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "courier";
+  font-size: 14px;
+  padding-top: 4px; }
+
+.checkbox-container-01 input, .checkbox-container-02 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; }
+
+.checkbox-container-01:hover input ~ .checkmark, .checkbox-container-02:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+.checkbox-container-01 input:checked ~ .checkmark, .checkbox-container-02 input:checked ~ .checkmark {
+  background-color: black; }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.checkbox-container-01 input:checked ~ .checkmark::after, .checkbox-container-02 input:checked ~ .checkmark::after {
+  display: block; }
+
+.checkbox-container-01 .checkmark:after, .checkbox-container-02 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.checkbox-container-02 {
+  margin-left: 15px;
+  margin-right: 10px; }
+
+.form-preferred-day {
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 10px; }
+
+.radio-buttons {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px; }
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "courier";
+  font-size: 14px;
+  padding-right: 10px; }
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+.radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%; }
+
+.radio-container:hover input ~ .radio-checkmark {
+  background-color: #ccc; }
+
+.radio-container input:checked ~ .radio-checkmark {
+  background-color: black; }
+
+.radio-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.radio-container input:checked ~ .radio-checkmark:after {
+  display: block; }
+
+.radio-container .radio-checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white; }
+
+.reason-for-contact {
+  background-color: white;
+  border: 1px solid black;
+  font-family: "courier";
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+  position: relative;
+  font-family: "courier"; }
+
+.reason-for-contact select {
+  display: none;
+  /*hide original SELECT element: */ }
+
+.select-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 10px; }
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 55px;
+  right: 25px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent; }
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 50px;
+  right: 25px; }
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer; }
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: white;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none; }
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1); }
+
 .form textarea::placeholder, .form input::placeholder {
   color: black;
   font-family: "courier";
@@ -646,6 +841,13 @@ footer .footer-nav li a {
 
   .form-inputs input:nth-child(2), .form-inputs input:last-child {
     margin-left: 5px; } }
+@media (min-width: 457px) {
+  .checkbox-container-01 {
+    margin-left: 20px; }
+
+  .checkbox-container-01, .checkbox-container-02 {
+    padding-top: 0;
+    padding-bottom: 5px; } }
 @media (min-width: 484px) {
   .hours-content {
     margin-top: 30px;

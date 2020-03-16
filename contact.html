@@ -77,9 +77,50 @@
                     <div class="form">
                         <div class="form-inputs">
                             <input type="text" id="name" name="name" placeholder="Name">
-                            <input type="text" id="phone" name="phone" placeholder="Phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                             <input type="text" id="email" name="email" placeholder="Email">
                         </div><!--end form-inputs-->
+                        <div class="form-preferred-method">
+                            <p>Preferred method of contact:</p>
+                            <div class="checkboxes">
+                                <label class="checkbox-container-01">Phone
+                                    <input type="checkbox" id="phone" name=
+                                    "phone" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="checkbox-container-02">Email
+                                    <input type="checkbox" id="email" name=
+                                    "email" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </div><!--end checkboxes-->
+                        </div><!--end form-preferred-method-->
+                        <div class="form-preferred-day">
+                            <p>Preferred time of day to contact you:</p>
+                            <div class="radio-buttons">
+                                <label class="radio-container">Morning
+                                <input type="radio" id="morning" name="morning">
+                                <span class="radio-checkmark"></span>
+                                </label>
+                                <label class="radio-container">Afternoon
+                                <input type="radio" id="afternoon" name="afternoon">
+                                <span class="radio-checkmark"></span>
+                                </label>
+                                <label class="radio-container">Evening
+                                <input type="radio" id="evening" name="evening">
+                                <span class="radio-checkmark"></span>
+                                </label>
+                            </div><!--end radio-buttons-->
+                        </div><!--end form-preferred-day-->
+                        <div class="reason-for-contact">
+                            <label for="reason for contact">Your reason for contact:</label>
+                            <select id="reason-for-contact">
+                              <option value="reservation">Reservation</option>
+                              <option value="beer order">Placing a beer order</option>
+                              <option value="renting our space">Renting the space</option>
+                              <option value="Other">Other</option>
+                            </select>
+                        </div><!--end reason-for-contact-->
                         <textarea id="message" name="message" rows="20" cols="70" placeholder="Your message here"></textarea>
                     </div><!--end form-->
                     <div class="submit-button">
