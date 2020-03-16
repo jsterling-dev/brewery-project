@@ -336,44 +336,40 @@ footer .footer-nav li a {
   .text-column h3 {
     font-size: 20px;
     margin: 0;
-    padding: 5% 10%; }
+    padding: 5% 3%; }
 
 #box-5 {
-  margin-top: 20px; }
+  margin-top: 25px; }
 
 #box-7 {
   margin-bottom: 35px; }
 
-#box-2 img {
-  max-width: 100%; }
-
-@media (min-width: 600px) {
-  .text-column, .img-column {
+@media only screen and (min-width: 600px) {
+  .grid-parent {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-areas: "2 1" "4 3" "5 6" "7 ."; }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img1 text1" "img2 text2" "img3 text3" "img4 . "; }
 
   #box-1 {
-    grid-area: 1; }
+    grid-area: text1; }
 
   #box-2 {
-    grid-area: 2; }
+    grid-area: img1; }
 
   #box-3 {
-    grid-area: 3; }
+    grid-area: text2; }
 
   #box-4 {
-    grid-area: 4; }
+    grid-area: img2; }
 
   #box-5 {
-    grid-area: 5; }
+    grid-area: img3; }
 
   #box-6 {
-    grid-area: 6; }
+    grid-area: text3; }
 
   #box-7 {
-    grid-area: 7; } }
+    grid-area: img4; } }
 .main-beer {
   position: relative;
   top: 0;
