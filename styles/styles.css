@@ -448,6 +448,9 @@ footer .footer-nav li a {
 
   #box-7 {
     grid-area: img4; } }
+#column-6 {
+  margin-bottom: 35px; }
+
 .main-beer {
   position: relative;
   top: 0;
