@@ -21,7 +21,7 @@ body {
 .top-banner h1 {
   color: white;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -247,6 +247,9 @@ h1, h2, h3 {
 p {
   font-size: 16px; }
 
+html {
+  scroll-behavior: smooth; }
+
 footer {
   background-color: #d66a42;
   justify-content: space-between;
@@ -356,6 +359,10 @@ footer .footer-nav li a {
 .top-banner img, .img-column img {
   display: block; }
 
+.top-banner h1 {
+  font-size: 8vw;
+  text-align: center; }
+
 .text-column {
   max-width: 550px;
   padding: 0 8%;
@@ -450,6 +457,10 @@ footer .footer-nav li a {
     grid-area: img4; } }
 #column-6 {
   margin-bottom: 35px; }
+
+.top-banner h1 {
+  font-size: 8vw;
+  text-align: center; }
 
 .main-beer {
   position: relative;
