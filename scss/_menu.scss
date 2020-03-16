@@ -27,6 +27,7 @@
     padding-right: 15px;
     max-width: 800px;
     margin: 0 auto;
+    z-index: 800;
 }
 
 
@@ -118,6 +119,10 @@
 
 .snack-name p {
     font-weight: 700;
+}
+
+.snacks {
+    padding-bottom: 30px;
 }
 
 @media (min-width: 600px) {

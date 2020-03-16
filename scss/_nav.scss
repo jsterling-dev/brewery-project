@@ -3,30 +3,44 @@
 }
 
 #navigation {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position:absolute;
-    top:0;
-	left:0;
-	z-index: 9999;
+  height: 100px;
+  // display: flex;
+  // justify-content: space-between;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 #navigation img {
     width: 100px;
-    margin-left: 10px;
 }
 
 .nav-logo {
-    width: 100%;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 3%;
+}
+
+.nav-menu {
+  position:absolute;
+  top:0;
+  right:3%;
+  z-index: 900;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav-menu .nav-toggle {
 	display: block;
 	width: 50px;
-    height: 50px;
-    margin-right: 10px;
+  height: 50px;
+  // margin-right: 10px;
+  // position: absolute;
+  // top: 0;
+  // right: 15%;
+  // z-index: 9999;
 }
 
 .nav-menu .nav-toggle span {
@@ -36,26 +50,40 @@
 	background-color: white;
 	margin-bottom: 5px;
 	border-radius: 3px;
-	box-shadow: 1px 2px $orange;
+  box-shadow: 1px 2px $orange;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .menu-left {
-	background-color: $orange;
-	height: 200px;
+  background-color: rgba(204, 204, 204, 0.85);
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: 3%;
 }
 
 .menu-left li:first-child {
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
-li {
+.menu-left li:last-child {
+	padding-bottom: 50px;
+}
+
+.menu-left li {
 	list-style: none;
 }
 
-a {
+.menu-left li a {
 	text-decoration: none;
-    color: black;
-    font-family: 'Courier';
+  color: black;
+  font-family: 'Courier';
+  font-weight: 700;
+  font-size: 20px;
 }
 
 /* New styling from Codepen */
@@ -69,7 +97,7 @@ a:hover, a :focus {
 }
 
 .nav-menu {
-    width: 500px;
+    width: 100vh;
 }
 
 .menu-left a {
@@ -102,7 +130,7 @@ a:hover, a :focus {
 }
 .menu-left a:hover:before {
   width: 100%;
-  background: #000;
+  background: $orange;
   transition: width .35s ease;
 }
 .menu-left a:hover:after {
@@ -111,11 +139,41 @@ a:hover, a :focus {
   transition: all 0s ease;
 }
 
+@media (min-width: 560px) {
 
-@media (max-width: 768px) {
+  .menu-left {
+    height: 500px;
+  }
+}
+
+@media (min-width: 600px) {
+  #navigation img {
+    width: 120px;
+}
+
+.nav-logo {
+    width: 120px;
+}
+
+}
+
+@media (min-width: 750px) {
+  #navigation img {
+    width: 150px;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+}
+
+
+@media (max-width: 855px) {
   ul {
     clear: both;
   }
+  
   ul li {
     padding: .5em 0;
   }
@@ -167,35 +225,44 @@ ul.menu-left:before {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 
-@media (min-width: 768px) {
+@media (min-width: 855px) {
 
 .nav-menu {
-    width: 800px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-  ul.menu-left {
-    max-height: none;
-    display: flex;
-    justify-content: space-between;
+
+ul.menu-left {
+  max-height: none;
+  display: flex;
+  justify-content: space-between;
   }
 
-  .nav-menu .nav-toggle {
-    display: none;
-  }
-
-.nav-toggle span {
-  position: relative;
-  display: block;
-  height: 2px;
-  width: 100%;
-  margin-top: 4px;
-  background-color: #000;
-  transition: all .25s;
+.nav-menu .nav-toggle {
+  display: none;
 }
+
+.menu-left li a {
+  font-size: 25px;
+}
+
+// .nav-toggle span {
+//   position: relative;
+//   display: block;
+//   height: 2px;
+//   width: 100%;
+//   margin-top: 4px;
+//   background-color: #000;
+//   transition: all .25s;
+// }
 
 .menu-left {
-	background-color: $orange;
-	height: 20px;
+  top: 0px;
+  background: none;
+}
+
+.menu-left li a {
+  color: white;
+	text-shadow: 1px 2px $orange;
 }
 
 .menu-left li:first-child {
