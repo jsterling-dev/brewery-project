@@ -346,7 +346,7 @@ footer .footer-nav li a {
   left: 0; }
 
 .beer-background-box {
-  background-color: purple;
+  background-color: #d66a42;
   opacity: 0.1;
   height: 100%;
   width: 100%;
@@ -431,13 +431,16 @@ footer .footer-nav li a {
 .beer-content p {
   margin-top: 5px; }
 
-.beer-listing {
+.beer-listing, .snacks-listing {
   padding: 30px 20px;
   margin-bottom: 30px;
   background-color: white; }
 
+.snack-name p {
+  font-weight: 700; }
+
 @media (min-width: 600px) {
-  .beer-listing {
+  .beer-listing, .snacks-listing {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
@@ -468,7 +471,7 @@ footer .footer-nav li a {
     width: auto;
     height: 30px; }
 
-  .beer-listing-wide {
+  .beer-listing-wide, .snacks-listing-wide {
     background-color: white;
     margin-bottom: 30px; }
 
