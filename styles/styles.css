@@ -1,18 +1,22 @@
 /*
-Error: File to import not found or unreadable: mixins.
+Error: File to import not found or unreadable: wrapper.
        Load path: /Users/jarrod/Documents/GitHub/sunrise-brewery/scss
-        on line 2 of scss/styles.scss
+        on line 7 of scss/styles.scss
 
-1: @import 'variables';
 2: @import 'mixins';
 3: @import 'resets';
 4: @import 'type';
 5: 
 6: // sections
-7: @import 'header';
+7: @import 'wrapper';
+8: @import 'header';
+9: @import 'nav';
+10: @import 'hamburger';
+11: @import 'body';
+12: @import 'main';
 
 Backtrace:
-scss/styles.scss:2
+scss/styles.scss:7
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -57,4 +61,4 @@ scss/styles.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: mixins.\A        Load path: /Users/jarrod/Documents/GitHub/sunrise-brewery/scss\A         on line 2 of scss/styles.scss\A \A 1: @import 'variables';\A 2: @import 'mixins';\A 3: @import 'resets';\A 4: @import 'type';\A 5: \A 6: // sections\A 7: @import 'header';"; }
+  content: "Error: File to import not found or unreadable: wrapper.\A        Load path: /Users/jarrod/Documents/GitHub/sunrise-brewery/scss\A         on line 7 of scss/styles.scss\A \A 2: @import 'mixins';\A 3: @import 'resets';\A 4: @import 'type';\A 5: \A 6: // sections\A 7: @import 'wrapper';\A 8: @import 'header';\A 9: @import 'nav';\A 10: @import 'hamburger';\A 11: @import 'body';\A 12: @import 'main';"; }
