@@ -86,15 +86,18 @@
 	margin-bottom: 35px;
 }
 
+/*
 @media only screen and (min-width: 600px) {
+
+// FLEX NOT WORKING
 .parent {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	}
 
-
-/*
-.grid-parent {
+//GRID NOT WORKING
+.parent {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas: 
@@ -130,6 +133,7 @@
 
 	#box-7 {
 		grid-area: img4;
-	}*/
-
+	}
 }
+
+*/

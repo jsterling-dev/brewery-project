@@ -1,27 +1,22 @@
 /*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 136 of scss/_about.scss
+Error: Invalid CSS after "*\/": expected "}", was ""
+        on line 139 of scss/_about.scss
         from line 16 of scss/styles.scss
 
-131: 	#box-7 {
-132: 		grid-area: img4;
-133: 	}*\/
-134: 
-135: }
+134: 	#box-7 {
+135: 		grid-area: img4;
+136: 	}
+137: }
+138: 
+139: *\/
 
 Backtrace:
-scss/_about.scss:136
+scss/_about.scss:139
 scss/styles.scss:16
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
-/Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
-/Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
-/Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
-/Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
 /Users/jarrod/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
@@ -75,4 +70,4 @@ scss/styles.scss:16
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 136 of scss/_about.scss\A         from line 16 of scss/styles.scss\A \A 131: 	#box-7 {\A 132: 		grid-area: img4;\A 133: 	}*/\A 134: \A 135: }"; }
+  content: "Error: Invalid CSS after \"*/\": expected \"}\", was \"\"\A         on line 139 of scss/_about.scss\A         from line 16 of scss/styles.scss\A \A 134: 	#box-7 {\A 135: 		grid-area: img4;\A 136: 	}\A 137: }\A 138: \A 139: */"; }
