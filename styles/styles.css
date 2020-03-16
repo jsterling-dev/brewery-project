@@ -510,7 +510,7 @@ footer .footer-nav li a {
   margin-bottom: 30px;
   background-color: white; }
 
-.snack-name p {
+.snack-name p:first-child {
   font-weight: 700; }
 
 .snacks {
