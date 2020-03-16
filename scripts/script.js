@@ -9,18 +9,6 @@ $('.logo').on('click', function(e) {
       scrollTop: 0
     }, 750, 'easeInOutQuad')
   });
-  // LINKS TO ANCHORS
-  $('a[href^="#"]').on('click', function(event) {
-  
-    var $target = $(this.getAttribute('href'));
-  
-    if($target.length) {
-      event.preventDefault();
-      $('html, body').stop().animate({
-        scrollTop: $target.offset().top
-      }, 750, 'easeInOutQuad');
-    }
-  });
   
   // TOGGLE HAMBURGER & COLLAPSE NAV
   $('.nav-toggle').on('click', function() {

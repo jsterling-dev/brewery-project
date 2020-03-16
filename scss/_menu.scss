@@ -64,6 +64,8 @@
     box-shadow: 2px 3px $orange;
     border-radius: 3px;
     border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
 }
 
 .beer-button {
@@ -174,4 +176,11 @@
         padding-left: 40px;
     }
 
+}
+
+@media (min-width: 700px) {
+
+    .top-banner .beer-h1 {
+        font-size: 70px;
+    }
 }

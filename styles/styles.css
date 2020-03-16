@@ -262,7 +262,8 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  cursor: pointer; }
 
 footer .social-icons img {
   width: 20px;
@@ -284,6 +285,43 @@ footer .footer-nav li a {
 
 .footer-col-02 li:last-child {
   margin-left: 45px; }
+
+.footer-col-01 a, .footer-col-02 a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0px;
+  transition: color .35s ease; }
+
+.footer-col-01 a:before, .footer-col-02 a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: width 0s ease, background .35s ease; }
+
+.footer-col-01 a:after, .footer-col-02 a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width .35s ease; }
+
+.footer-col-01 a:hover:before, .footer-col-02 a:hover:before {
+  width: 100%;
+  background: #964a2f;
+  transition: width .35s ease; }
+
+.footer-col-01 a:hover:after, .footer-col-02 a:hover:after {
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease; }
 
 #copyright {
   color: white;
@@ -427,7 +465,9 @@ footer .footer-nav li a {
   font-size: 16px;
   box-shadow: 2px 3px #d66a42;
   border-radius: 3px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  text-align: center;
+  cursor: pointer; }
 
 .beer-button {
   margin-right: 10px; }
@@ -514,6 +554,9 @@ footer .footer-nav li a {
 
   .beer h2 {
     padding-left: 40px; } }
+@media (min-width: 700px) {
+  .top-banner .beer-h1 {
+    font-size: 70px; } }
 .main-contact {
   position: relative;
   top: 0;
@@ -760,7 +803,7 @@ footer .footer-nav li a {
   /*hide original SELECT element: */ }
 
 .select-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #eee;
   margin-top: 10px; }
 
 /* Style the arrow inside the select element: */
@@ -803,7 +846,7 @@ footer .footer-nav li a {
   display: none; }
 
 .select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1); }
+  background-color: #eee; }
 
 .form textarea::placeholder, .form input::placeholder {
   color: black;
@@ -819,7 +862,8 @@ footer .footer-nav li a {
   font-family: "courier";
   font-size: 16px;
   box-shadow: 2px 3px #d66a42;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
 
 .contact-info {
   margin-top: 50px;

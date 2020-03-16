@@ -16,6 +16,7 @@ footer .social-icons {
 	justify-content: space-around;
 	align-items: center;
 	line-height: 1.4em;
+	cursor: pointer;
 }
 
 footer .social-icons img {
@@ -44,6 +45,45 @@ footer .footer-nav li a {
 .footer-col-02 li:last-child {
 	margin-left: 45px;
 }
+
+.footer-col-01 a, .footer-col-02 a {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 0px;
+	transition: color .35s ease;
+  }
+  
+  .footer-col-01 a:before, .footer-col-02 a:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	transition: width 0s ease, background .35s ease;
+  }
+  .footer-col-01 a:after, .footer-col-02 a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	width: 0;
+	background: white;
+	transition: width .35s ease;
+  }
+  .footer-col-01 a:hover:before, .footer-col-02 a:hover:before {
+	width: 100%;
+	background: $dark-orange;
+	transition: width .35s ease;
+  }
+  .footer-col-01 a:hover:after, .footer-col-02 a:hover:after {
+	width: 100%;
+	background: transparent;
+	transition: all 0s ease;
+  }
 
 #copyright {
 	color: white;
