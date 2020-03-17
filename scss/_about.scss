@@ -95,14 +95,14 @@
 @media only screen and (min-width: 600px) {
 
 // FLEX NOT WORKING
-.parent {
+.about-parent {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	}
 
 //GRID NOT WORKING
-.parent {
+.about-parent {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-areas: 

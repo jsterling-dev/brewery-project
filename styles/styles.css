@@ -444,12 +444,12 @@ footer .footer-nav li a {
   #box-7 {
     margin-bottom: 35px; } }
 @media only screen and (min-width: 600px) and (min-width: 600px) {
-  .parent {
+  .about-parent {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
 
-  .parent {
+  .about-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "img1 text1" "img2 text2" "img3 text3" "img4 . "; }
