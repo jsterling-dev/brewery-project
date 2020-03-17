@@ -13,28 +13,19 @@ body {
   margin: 0; }
 
 .top-banner img {
-  max-width: 100%;
   position: relative;
   top: 0;
-  left: 0; }
-
-#est {
-  font-family: "Overpass Mono";
-  color: white;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  z-index: 700;
-  font-size: 1.1em;
-  text-shadow: 2px 3px #d66a42; }
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; }
 
 .top-banner h1 {
   font-family: "courier";
   color: white;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -42,35 +33,23 @@ body {
   font-size: 50px;
   text-shadow: 2px 3px #d66a42; }
 
-@media only screen and (min-width: 600px) {
-  #est {
-    font-size: 1.8em; } }
-@media only screen and (min-width: 1000px) {
-  #est {
-    font-size: 2.2em; } }
 .top-banner {
   position: relative; }
 
 #navigation {
   height: 100px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  width: 100%; }
 
 #navigation img {
-  width: 100px; }
-
-.nav-logo {
   width: 100px;
   position: absolute;
   top: 0;
   left: 3%; }
 
+.nav-logo {
+  width: 100px; }
+
 .nav-menu {
-  position: absolute;
-  top: 0;
-  right: 3%;
   z-index: 900;
   max-width: 100%;
   height: auto; }
@@ -78,7 +57,10 @@ body {
 .nav-menu .nav-toggle {
   display: block;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 3%; }
 
 .nav-menu .nav-toggle span {
   display: block;
@@ -99,7 +81,7 @@ body {
   width: 100%;
   position: absolute;
   top: -20px;
-  left: 3%; }
+  left: 0; }
 
 .menu-left li:first-child {
   padding-top: 60px; }
@@ -165,27 +147,12 @@ a:hover, a :focus {
   background: transparent;
   transition: all 0s ease; }
 
-@media (min-width: 560px) {
-  .menu-left {
-    height: 500px; } }
-@media (min-width: 600px) {
-  #navigation img {
-    width: 120px; }
+ul {
+  clear: both; }
 
-  .nav-logo {
-    width: 120px; } }
-@media (min-width: 750px) {
-  #navigation img {
-    width: 150px; }
+ul li {
+  padding: .5em 0; }
 
-  .nav-logo {
-    width: 150px; } }
-@media (max-width: 855px) {
-  ul {
-    clear: both; }
-
-  ul li {
-    padding: .5em 0; } }
 .hide-nav {
   transform: translateY(-120%);
   -webkit-transform: translateY(-120%); }
@@ -229,14 +196,34 @@ ul.menu-left.collapse {
 .nav-toggle.open span:last-child {
   transform: rotate(-45deg) translate(5px, -5px); }
 
+@media (min-width: 560px) {
+  .menu-left {
+    height: 500px; } }
+@media (min-width: 600px) {
+  #navigation img {
+    width: 120px; }
+
+  .nav-logo {
+    width: 120px; } }
+@media (min-width: 750px) {
+  #navigation img {
+    width: 150px; }
+
+  .nav-logo {
+    width: 150px; } }
 @media (min-width: 1000px) {
   .nav-menu {
     margin-right: 20px; }
 
   ul.menu-left {
-    max-height: none;
+    max-height: 50px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    top: 0px;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0; }
 
   .nav-menu .nav-toggle {
     display: none; }
@@ -244,16 +231,12 @@ ul.menu-left.collapse {
   .menu-left li a {
     font-size: 25px; }
 
-  .menu-left {
-    top: 0px;
-    background: none; }
-
   .menu-left li a {
     color: white;
     text-shadow: 1px 2px #d66a42; }
 
   .menu-left li:first-child {
-    padding-top: 0px; } }
+    padding: .5em; } }
 body {
   background-color: white; }
 
@@ -278,14 +261,15 @@ footer {
 .footer-row-01 {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-start; }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   line-height: 1.4em;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 25px; }
 
 footer .social-icons img {
   width: 20px;
@@ -375,6 +359,9 @@ footer .footer-nav li a {
 
   .footer-nav li a {
     margin-left: 40px; } }
+@media (min-width: 855px) {
+  footer .social-icons {
+    margin-top: 16px; } }
 .top-banner img, .img-column img {
   display: block; }
 
@@ -1004,6 +991,49 @@ footer .footer-nav li a {
 @media (min-width: 820px) {
   .hours-content {
     width: 220px; } }
+.main-home {
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.home-background-box {
+  background-color: #d66a42;
+  opacity: 0.1;
+  height: 95%;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 800; }
+
+.home-main-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 800; }
+
+#home-h1 {
+  font-size: 8vw;
+  line-height: 8vw; }
+
+#est {
+  font-family: "Overpass Mono";
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 700;
+  font-size: 1.1em;
+  text-shadow: 2px 3px #d66a42; }
+
 .top-banner h2 {
   color: black;
   font-size: 18px;
@@ -1019,6 +1049,9 @@ footer .footer-nav li a {
 .section01 img {
   display: block; }
 
+@media only screen and (min-width: 600px) {
+  #est {
+    font-size: 1.8em; } }
 @media only screen and (min-width: 700px) {
   .section01 p {
     max-width: 600px;
@@ -1040,12 +1073,19 @@ footer .footer-nav li a {
     margin: 0 auto; }
 
   .top-banner h2 {
-    font-size: 32px; } }
+    font-size: 32px; }
+
+  #est {
+    font-size: 2.2em; }
+
+  .home-main-content {
+    padding: 0; } }
 .cta1, .cta2, .cta3, .cta4 {
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
-  padding: 50px; }
+  padding: 50px;
+  display: block; }
 
 .cta1 {
   background-image: url(../images/our-beer-banner.jpg); }
@@ -1086,6 +1126,9 @@ footer .footer-nav li a {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.section3-content {
+  text-align: center; }
 
 @media (min-width: 600px) {
   .cta1, .cta2, .cta3, .cta4 {

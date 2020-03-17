@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     width: auto;
     padding: 50px;
+    display: block;
 }
 
 .cta1 {
@@ -52,6 +53,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section3-content {
+    text-align: center;
 }
 
 @media (min-width: 600px) {
