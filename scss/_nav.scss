@@ -230,7 +230,10 @@ transform: rotate(-45deg) translate(5px, -5px);
 @media (min-width: 1000px) {
 
 .nav-menu {
-    margin-right: 20px;
+  margin-right: 20px;
+  right: 3%;
+  position:absolute;
+  top:0;
 }
 
 ul.menu-left {
