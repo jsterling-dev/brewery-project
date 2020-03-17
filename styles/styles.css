@@ -379,7 +379,6 @@ footer .footer-nav li a {
   display: block; }
 
 .top-banner h1 {
-  font-size: 8vw;
   text-align: center; }
 
 .text-column {
@@ -478,8 +477,8 @@ footer .footer-nav li a {
   margin-bottom: 35px; }
 
 .top-banner h1 {
-  font-size: 8vw;
-  text-align: center; }
+  text-align: center;
+  font-size: 4.4em; }
 
 .main-beer {
   position: relative;
