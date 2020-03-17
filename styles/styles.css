@@ -18,6 +18,17 @@ body {
   top: 0;
   left: 0; }
 
+#est {
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 700;
+  font-size: 1.1em;
+  text-shadow: 2px 3px #d66a42; }
+
 .top-banner h1 {
   color: white;
   position: absolute;
@@ -29,6 +40,12 @@ body {
   font-size: 50px;
   text-shadow: 2px 3px #d66a42; }
 
+@media only screen and (min-width: 600px) {
+  #est {
+    font-size: 1.8em; } }
+@media only screen and (min-width: 1000px) {
+  #est {
+    font-size: 2.2em; } }
 .top-banner {
   position: relative; }
 
