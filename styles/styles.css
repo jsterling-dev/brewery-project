@@ -19,6 +19,7 @@ body {
   left: 0; }
 
 #est {
+  font-family: "Overpass Mono";
   color: white;
   position: absolute;
   top: 70%;
@@ -30,6 +31,7 @@ body {
   text-shadow: 2px 3px #d66a42; }
 
 .top-banner h1 {
+  font-family: "courier";
   color: white;
   position: absolute;
   top: 50%;
