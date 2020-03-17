@@ -46,97 +46,12 @@
 }
 
 @media only screen and (min-width: 600px) {
-
-.top-banner img, .img-column img{
-	display: block;
-}
-
-.text-column{
-	max-width: 550px;
-	padding: 0 8%;
-	line-height: 1.2em;
-	p {
-		background-color: rgba(214, 106, 66,0.2);
-		padding-bottom: 35px;
-		padding-left: 3%;
-		padding-right: 1%;
-		margin: 0 auto;
-	}
-
-	#sunrise {
-		text-transform: uppercase;
-		font-size: 19px;
-	}
-
-	h2 {
-	font-size: 20px;
-	background-color: rgba(214, 106, 66,0.2);
-	margin: 0;
-	padding: 5% 3%;
-	}
-
-	h3{
-	font-size: 20px;
-	margin: 0;
-	padding: 5% 3%;
-	}
-}
-
-#box-5 {
-	margin-top: 25px;
-}
-
-#box-7 {
-	margin-bottom: 35px;
+	
+	.about-parent {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
 }
 
 
-@media only screen and (min-width: 600px) {
-
-// FLEX NOT WORKING
-.about-parent {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	}
-
-//GRID NOT WORKING
-.about-parent {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas: 
-	"img1 text1"
-	"img2 text2"
-	"img3 text3"
-	"img4 . ";
-	}
-
-	#box-1 {
-		grid-area: text1;
-	}
-
-	#box-2 {
-		grid-area: img1;
-	}
-
-	#box-3 {
-		grid-area: text2;
-	}
-
-	#box-4 {
-		grid-area: img2;
-	}
-
-	#box-5 {
-		grid-area: img3;
-	}
-
-	#box-6 {
-		grid-area: text3;
-	}
-
-	#box-7 {
-		grid-area: img4;
-	}
-}
 }
