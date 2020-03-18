@@ -44,7 +44,7 @@ footer .footer-nav li a {
 }
 
 .footer-col-02 li:last-child {
-	margin-left: 45px;
+	margin-left: 35px;
 }
 
 .footer-col-01 a, .footer-col-02 a {
@@ -101,6 +101,10 @@ footer .footer-nav li a {
 	font-size: 14px;
 }
 
+#copyright p:first-child {
+	padding-bottom: 10px;
+}
+
 @media (min-width: 600px) {
 	.cta {
 		display: flex;
@@ -123,14 +127,6 @@ footer .footer-nav li a {
 	.footer-nav li a {
 		margin-left: 40px;
 	}
-}
-
-@media (min-width: 855px) {
-
-	footer .social-icons {
-		margin-top: 16px;
-	}
-
 }
 
 

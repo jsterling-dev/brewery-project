@@ -3,7 +3,7 @@
 }
 
 #navigation {
-  height: 100px;
+  // height: 100px;
   width: 100%;
   // position:absolute;
   // top:0;
@@ -22,12 +22,12 @@
 }
 
 .nav-menu {
-  // position:absolute;
-  // top:0;
-  // right:3%;
-  z-index: 900;
+  position:absolute;
+  top:0;
+  right:0;
   max-width: 100%;
   height: auto;
+  z-index: 900;
 }
 
 .nav-menu .nav-toggle {
@@ -218,6 +218,10 @@ transform: rotate(-45deg) translate(5px, -5px);
 
 .nav-logo {
     width: 150px;
+}
+
+.nav-menu {
+  position: static;
 }
 
 // .menu-left {
