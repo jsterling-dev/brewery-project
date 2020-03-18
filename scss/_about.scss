@@ -32,17 +32,6 @@
 	margin-bottom: 50px;
 }
 
-// Main Styles
-
-.top-banner .about-h1 {
-    font-size: 8vw;
-    position: absolute;
-	top: 50%;
-	left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 600;
-}
-
 .textbox {
 	padding-bottom: 20px;
 }
@@ -53,6 +42,7 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
 }
 
 @media (min-width: 700px) {
@@ -78,17 +68,4 @@
 	max-width: 57%;
 }
 
-}
-
-@media (min-width: 750px) {
-	.top-banner .about-h1 {
-		z-index: 0;
-	}
-}
-
-@media (min-width: 1100px) {
-
-    .top-banner .about-h1 {
-        font-size: 90px;
-    }
 }

@@ -1,20 +1,20 @@
 // Background box styles
 
 .main-home {
-    position: relative;
-    top: 0;
+	position: relative;
+	top: 0;
 	left: 0;
 }
 
 .home-background-box {
-    background-color: $orange;
-    opacity: 0.1;
-    height: 95%;
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	background-color: $orange;
+	opacity: 0.1;
+	height: 95%;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .home-main-content {
@@ -34,6 +34,11 @@
 #home-h1 {
 	font-size: 10vw;
 	line-height: 9vw;
+	font-family: $main-font;
+	color: white;
+	margin: 0;
+	text-align: center;
+	text-shadow: 2px 3px $orange;
 }
 
 .home-banner-text {
@@ -47,10 +52,6 @@
 #est {
 	font-family: $secondary-font;
 	color: white;
-	// position: absolute;
-	// top: 67%;
-	// left: 50%;
-	// transform: translate(-50%, -50%);
 	margin: 0;
 	z-index: 700;
 	font-size: 6vw;
@@ -73,13 +74,11 @@
 .section01{
 
 	h2 {
-		// max-width: 350px;
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	p {
-		// max-width: 350px;
 		margin: 0 auto;
 		padding: 40px 0;
 		line-height: 1.2em;
@@ -92,37 +91,26 @@
 
 @media (min-width: 500px) {
 
-	.home-main-content {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	}
-
-@media only screen and (min-width: 600px) {
-	#est {
-		font-size: 1.8em;
-	}
+.home-main-content {
+	padding-left: 30px;
+	padding-right: 30px;
+}
 
 }
 
+@media only screen and (min-width: 600px) {
 
+#est {
+	font-size: 1.8em;
+}
+
+}
 
 @media only screen and (min-width: 700px) {
 
 .section01{
 
-	// h2 {
-	// 	max-width: 600px;
-	// }
-
-	p {
-		// max-width: 600px;
-		margin: 0 auto;
-		font-size: 16px;
-	}
-
 	img {
-		// max-width: 600px;
 		margin: 0 auto;
 	}
 
@@ -130,8 +118,7 @@
 
 .top-banner h2 {
 	font-size:28px;
-	
-	}
+}
 
 .home-main-content {
 	padding-left: 50px;
@@ -141,43 +128,40 @@
 }
 
 @media (min-width: 750px) {
-	.home-banner-text {
-		z-index: 0;
-	}
+
+.home-banner-text {
+	z-index: 0;
+}
+
 }
 
 @media only screen and (min-width: 1000px) {
-	.section01{
-	
-	// h2 {
-	// 	max-width: 700px;
-	// }
 
-	p {
-		// max-width: 700px;
-		margin: 0 auto;
-		font-size: 16px;
-		
-	}
+.section01{
 
-	// img {
-	// 	max-width: 800px;
-	// 	margin: 0 auto;
-	// }
+p {
+	margin: 0 auto;
+	font-size: 16px;
+}
 
 }
 
 .top-banner h2 {
+
 	font-size:32px;
-	
-	}
+
+}
 
 #est {
+
 	font-size: 2.2em;
+
 }
 
 .home-main-content {
+
 	padding: 0;
+
 }
 
 }

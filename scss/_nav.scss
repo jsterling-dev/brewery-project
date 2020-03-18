@@ -3,22 +3,18 @@
 }
 
 #navigation {
-  // height: 100px;
   width: 100%;
-  // position:absolute;
-  // top:0;
-  // left:0;
 }
 
 #navigation img {
-    width: 100px;
-    position: absolute;
-    top: 0;
-    left: 3%;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 3%;
 }
 
 .nav-logo {
-    width: 100px;
+  width: 100px;
 }
 
 .nav-menu {
@@ -60,7 +56,6 @@
   position: absolute;
   top: -20px;
   left: 0;
-  // left: 3%;
 }
 
 .menu-left li:first-child {
@@ -83,16 +78,6 @@
   font-size: 20px;
 }
 
-/* New styling from Codepen */
-
-a {
-  text-decoration: none;
-  color: rgba(34, 34, 34, 0.8);
-}
-a:hover, a :focus {
-  color: black;
-}
-
 .nav-menu {
     width: 100vh;
 }
@@ -112,8 +97,9 @@ a:hover, a :focus {
   bottom: 0;
   height: 2px;
   width: 0;
-  transition: width 0s ease, background .35s ease;
+  transition: width 0s ease, .35s ease;
 }
+
 .menu-left a:after {
   content: '';
   display: block;
@@ -125,11 +111,13 @@ a:hover, a :focus {
   background: white;
   transition: width .35s ease;
 }
+
 .menu-left a:hover:before {
   width: 100%;
   background: $orange;
   transition: width .35s ease;
 }
+
 .menu-left a:hover:after {
   width: 100%;
   background: transparent;
@@ -166,6 +154,7 @@ ul.menu-left:before {
   display: table;
   clear: both;
 }
+
 ul.menu-left.collapse {
   max-height: 15em;
 }
@@ -184,28 +173,32 @@ padding: 8px 8px;
 .nav-toggle.open span:first-child {
 transform: rotate(45deg) translate(8px, 8px);
 }
+
 .nav-toggle.open span:nth-child(2) {
 width: 0%;
 opacity: 0;
 }
+
 .nav-toggle.open span:last-child {
 transform: rotate(-45deg) translate(5px, -5px);
 }
 
 @media (min-width: 560px) {
 
-  .menu-left {
-    height: 500px;
-  }
+.menu-left {
+  height: 500px;
+}
+
 }
 
 @media (min-width: 600px) {
-  #navigation img {
-    width: 120px;
+
+#navigation img {
+  width: 120px;
 }
 
 .nav-logo {
-    width: 120px;
+  width: 120px;
 }
 
 }
@@ -217,17 +210,12 @@ transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .nav-logo {
-    width: 150px;
+  width: 150px;
 }
 
 .nav-menu {
   position: static;
 }
-
-// .menu-left {
-//   height: 100vh;
-//   width: 100%;
-// }
 
 }
 
@@ -249,7 +237,7 @@ ul.menu-left {
   position: absolute;
   top: 0;
   right: 0;
-  }
+}
 
 .nav-menu .nav-toggle {
   display: none;

@@ -34,15 +34,6 @@
 
 // Main Styles
 
-.top-banner .contact-h1 {
-    font-size: 8vw;
-    position: absolute;
-	top: 50%;
-	left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 600;
-}
-
 .address-block {
     display: flex;
     justify-content: center;
@@ -111,7 +102,6 @@
 
 .contact-section h3 {
     font-size: 20px;
-    // text-align: center;
 }
 
 // Form Styling
@@ -125,8 +115,6 @@
 }
 
 .form-preferred-method {
-    // display: flex;
-    // flex-wrap: wrap;
     background-color: white;
     border: 1px solid black;
     margin-bottom: 10px;
@@ -140,7 +128,7 @@
     display: flex;
 }
 
-.form-preferred-method p, .form-preferred-day p {
+.form-preferred-method p, .form-preferred-day p, .reason-for-contact p {
     padding-left: 10px;
     font-size: 14px;
 }
@@ -159,7 +147,7 @@
     font-family: $main-font;
     font-size: 14px;
     padding-top: 4px;
-    }
+}
 
 .checkbox-container-01 input, .checkbox-container-02 input {
     position: absolute;
@@ -167,7 +155,7 @@
     cursor: pointer;
     height: 0;
     width: 0;
-    }
+}
 
 .checkmark {
     position: absolute;
@@ -176,11 +164,11 @@
     height: 25px;
     width: 25px;
     background-color: #eee;
-    }
+}
 
 .checkbox-container-01:hover input ~ .checkmark, .checkbox-container-02:hover input ~ .checkmark  {
     background-color: #ccc;
-    }
+}
 
 .checkbox-container-01 input:checked ~ .checkmark, .checkbox-container-02 input:checked ~ .checkmark {
     background-color: black;
@@ -206,7 +194,7 @@
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    }
+}
 
 .checkbox-container-02 {
     margin-left: 15px;
@@ -219,6 +207,7 @@
     background-color: white;
     border: 1px solid black;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .radio-buttons {
@@ -242,13 +231,13 @@
     font-family: $main-font;
     font-size: 14px;
     padding-right: 10px;
-    }
+}
 
 .radio-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    }
+}
 
 .radio-checkmark {
     position: absolute;
@@ -258,25 +247,25 @@
     width: 25px;
     background-color: #eee;
     border-radius: 50%;
-    }
+}
 
 .radio-container:hover input ~ .radio-checkmark {
     background-color: #ccc;
-    }
+}
  
 .radio-container input:checked ~ .radio-checkmark {
     background-color: black;
-    }
+}
 
 .radio-checkmark:after {
     content: "";
     position: absolute;
     display: none;
-    }
+}
 
 .radio-container input:checked ~ .radio-checkmark:after {
     display: block;
-    }
+}
 
 .radio-container .radio-checkmark:after {
     top: 9px;
@@ -301,16 +290,14 @@
 }
   
   .reason-for-contact select {
-    display: none; /*hide original SELECT element: */
-  }
+    display: none; 
+}
   
   .select-selected {
-    // background-color: rgba(0, 0, 0, 0.1);
     background-color: #eee;
     margin-top: 10px;
-  }
-  
-  /* Style the arrow inside the select element: */
+}
+
   .select-selected:after {
     position: absolute;
     content: "";
@@ -320,45 +307,39 @@
     height: 0;
     border: 6px solid transparent;
     border-color: black transparent transparent transparent;
-  }
+}
   
-  /* Point the arrow upwards when the select box is open (active): */
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent black transparent;
     top: 50px;
     right: 25px;
-  }
+}
   
-  /* style the items (options), including the selected item: */
   .select-items div,.select-selected {
     color: black;
     padding: 8px 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
-  }
+}
   
-  /* Style items (options): */
   .select-items {
     position: absolute;
     background-color: white;
-    // top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
     padding-left: 10px;
     padding-right: 10px;
-  }
+}
   
-  /* Hide the items when the select box is closed: */
   .select-hide {
     display: none;
-  }
+}
   
   .select-items div:hover, .same-as-selected {
-    // background-color: rgba(0, 0, 0, 0.1);
     background-color: #eee;
-  }
+}
 
 // Message styling
 
@@ -393,119 +374,114 @@
 }
 
 @media (min-width: 440px) {
-    .contact-section h3 {
-        text-align: left;
-    }
 
-    .form-inputs {
-        display: flex;
-        justify-content: space-between;
-    }
+.contact-section h3 {
+    text-align: left;
 
-    .form-inputs input:nth-child(2), .form-inputs input:last-child {
-        margin-left: 5px;
-    }
+}
+
+.form-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-inputs input:nth-child(2), .form-inputs input:last-child {
+    margin-left: 5px;
+}
 
 }
 
 @media (min-width: 457px) { 
 
-    .checkbox-container-01 {
-        margin-left: 20px;
-    }
+.checkbox-container-01 {
+    margin-left: 20px;
+}
 
-    .checkbox-container-01, .checkbox-container-02 {
-        padding-top: 0;
-        padding-bottom: 5px;
-    }
+.checkbox-container-01, .checkbox-container-02 {
+    padding-top: 0;
+    padding-bottom: 5px;
+}
+
 }
 
 @media (min-width: 484px) {
 
-    .hours-content {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+.hours-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
-    .contact-section {
-        margin-top: 40px;
-        max-width: auto;
-        margin: 0 auto;
-    }
+.contact-section {
+    margin-top: 40px;
+    max-width: auto;
+    margin: 0 auto;
+}
+
 }
 
 @media (min-width: 500px) {
 
-    .contact-main-content {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    }
+.contact-main-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+}
 
 @media (min-width: 600px) {
 
-    .hours-section {
-        display: flex;
-        justify-content: center;
-        flex-direction: row-reverse;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+.hours-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    .hours-content {
-        width: 350px;
-        margin-top: 0;
-    }
+.hours-content {
+    width: 350px;
+    margin-top: 0;
+}
 
     
-    .hours-content h2 {
-        display: block;
-        margin-left: 30px;
-    }
+.hours-content h2 {
+    display: block;
+    margin-left: 30px;
+}
     
-    .hours-columns {
-        display: flex;
-        justify-content: left;
-        margin-left: 30px;
-    }
+.hours-columns {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+}
 
-    .hours-content h2 {
-        margin-top: 0;
-    }
+.hours-content h2 {
+    margin-top: 0;
+}
 
 }
 
 @media (min-width: 650px) {
 
-    .hours-content {
-        width: 280px;
-    }
+.hours-content {
+    width: 280px;
 }
 
-@media (min-width: 750px) {
-	.top-banner .contact-h1 {
-		z-index: 0;
-	}
 }
 
     
 @media (min-width: 800px) {
 
-    .hours-content {
-        width: 230px;
-    }
+.hours-content {
+    width: 230px;
+}
+
 }
 
 @media (min-width: 820px) {
 
-    .hours-content {
-        width: 220px;
-    }
+.hours-content {
+    width: 220px;
 }
 
-@media (min-width: 1100px) {
-
-    .top-banner .contact-h1 {
-        font-size: 90px;
-    }
 }

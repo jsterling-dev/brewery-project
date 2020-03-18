@@ -1,15 +1,7 @@
-h1, h2, h3, p, li, a  {
-	font-family: $main-font;
-}
-
-h1, h2, h3 {
-	font-weight: 700;
-}
-
-p {
-	font-size: 16px;
-}
-
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
 }
