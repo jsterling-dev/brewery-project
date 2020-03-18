@@ -1012,7 +1012,7 @@ footer .footer-nav li a {
 .home-background-box {
   background-color: #d66a42;
   opacity: 0.1;
-  height: 95%;
+  height: 100%;
   width: 80%;
   position: absolute;
   top: 50%;
@@ -1028,7 +1028,9 @@ footer .footer-nav li a {
   padding-right: 15px;
   max-width: 900px;
   margin: 0 auto;
-  z-index: 800; }
+  z-index: 800;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 #home-h1 {
   font-size: 10vw;
@@ -1059,7 +1061,8 @@ footer .footer-nav li a {
   color: black;
   font-size: 18px;
   margin: 0 auto;
-  padding-top: 30px; }
+  padding-top: 30px;
+  max-width: 310px; }
 
 .quote {
   font-weight: 300;
@@ -1082,6 +1085,9 @@ footer .footer-nav li a {
 @media only screen and (min-width: 600px) {
   #est {
     font-size: 1.8em; } }
+@media (min-width: 650px) {
+  .section01 h2 {
+    max-width: 100%; } }
 @media only screen and (min-width: 700px) {
   .section01 img {
     margin: 0 auto; }

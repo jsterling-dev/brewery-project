@@ -9,7 +9,7 @@
 .home-background-box {
 	background-color: $orange;
 	opacity: 0.1;
-	height: 95%;
+	height: 100%;
 	width: 80%;
 	position: absolute;
 	top: 50%;
@@ -27,6 +27,8 @@
     max-width: 900px;
     margin: 0 auto;
 	z-index: 800;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 // Main styles
@@ -64,6 +66,7 @@
 	font-size:18px;
 	margin:0 auto;
 	padding-top: 30px ;
+	max-width: 310px;
 }
 
 .quote {
@@ -102,6 +105,14 @@
 
 #est {
 	font-size: 1.8em;
+}
+
+}
+
+@media (min-width: 650px) {
+
+.section01 h2 {
+	max-width: 100%;
 }
 
 }
