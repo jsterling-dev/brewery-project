@@ -555,7 +555,7 @@ footer .footer-nav li a {
 .beer-button {
   margin-right: 10px; }
 
-.beer h2 {
+.beer h3 {
   font-size: 20px;
   margin-bottom: 15px;
   padding-left: 20px; }
@@ -599,6 +599,11 @@ footer .footer-nav li a {
 .snacks {
   padding-bottom: 30px; }
 
+.snacks h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-left: 20px; }
+
 @media (min-width: 600px) {
   .beer-listing, .snacks-listing {
     display: flex;
@@ -636,8 +641,8 @@ footer .footer-nav li a {
     background-color: white;
     margin-bottom: 30px; }
 
-  .beer h2 {
-    padding-left: 40px; } }
+  .beer h3, .snacks h3 {
+    padding-left: 50px; } }
 .main-contact {
   position: relative;
   top: 0;
@@ -886,7 +891,7 @@ footer .footer-nav li a {
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 55px;
+  top: 73px;
   right: 25px;
   width: 0;
   height: 0;
@@ -895,7 +900,7 @@ footer .footer-nav li a {
 
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent black transparent;
-  top: 50px;
+  top: 67px;
   right: 25px; }
 
 .select-items div, .select-selected {

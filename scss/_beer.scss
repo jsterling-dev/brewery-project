@@ -62,7 +62,7 @@
     margin-right: 10px;
 }
 
-.beer h2 {
+.beer h3 {
     font-size: 20px;
     margin-bottom: 15px;
     padding-left: 20px;
@@ -117,6 +117,12 @@
     padding-bottom: 30px;
 }
 
+.snacks h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
 @media (min-width: 600px) {
     
 .beer-listing, .snacks-listing {
@@ -163,8 +169,8 @@
     margin-bottom: 30px;
 }
 
-.beer h2 {
-    padding-left: 40px;
+.beer h3, .snacks h3 {
+    padding-left: 50px;
 }
 
 }
